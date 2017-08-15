@@ -73,14 +73,6 @@ p{
   font-size: 0.28rem;
 }
 
-.logo{
-  position: absolute;
-  top: 0.4rem;
-  z-index: 10;
-  left: 50%;
-  @include transform(translate(-50%));
-}
-
 .btn{
   text-align: center;
   display: block;
@@ -512,10 +504,6 @@ body{
       text-align: center;
     }
   }
-}
-
-.logo{
-  @include size(2.18rem,0.73rem);
 }
 
 .pin{

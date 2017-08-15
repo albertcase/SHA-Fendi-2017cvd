@@ -1,5 +1,64 @@
 /*For home page*/
+.logo{
+  @include size(1.9rem,0.81rem);
+  margin: 0.4rem auto 0;
+}
 .bg{
+  @include fullabsolute(0,0,100%,100%,1);
+}
+.main-content{
   @include fullabsolute(0,0,100%,100%,2);
+}
+#pin-landing{
+  .top-bg{
+    @include size(60vw,40vw);
+    position: absolute;
+    top: -25vw;
+    left: -20vw;
+    background: #fdbf2d;
+    @include transform(rotate(-30deg));
+  }
+  .bottom-bg{
+    @include size(120vw,60vw);
+    position: absolute;
+    bottom: -60vw;
+    left: 0;
+    background: #fdbf2d;
+    @include transform-origin(0 0);
+    @include transform(rotate(-30deg));
+  }
+  .slogan{
+    @include size(4.46rem,1.87rem);
+    margin: 1rem auto;
+  }
+  .tag-list{
+    .item{
+      display: block;
+      @include size(2.89rem,1.56rem);
+      margin-left: 55%;
+      &:nth-child(2n+1){
+        margin-left: 50%;
+        transform: translateX(-100%);
+      }
+    }
+    .item-think{
+      @include size(3.02rem,1.70rem);
+    }
+    .item-yes{
+      @include size(2.42rem,1.44rem);
+      margin-top: -10%;
+    }
+    .item-try{
+      @include size(2.37rem,1.37rem);
+      margin-top: -5%;
+    }
+    .item-love{
+      @include size(2.89rem,1.56rem);
+    }
+    .item-hope{
+      @include size(1.97rem,1.30rem);
+      margin-top: -10%;
+    }
+  }
 }
 /*--------End home page--------*/

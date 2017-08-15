@@ -107,18 +107,6 @@ p {
   font-size: 0.28rem;
 }
 
-.logo {
-  position: absolute;
-  top: 0.4rem;
-  z-index: 10;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  transform: translate(-50%);
-}
-
 .btn {
   text-align: center;
   display: block;
@@ -705,11 +693,6 @@ body {
   text-align: center;
 }
 
-.logo {
-  width: 2.18rem;
-  height: 0.73rem;
-}
-
 .pin {
   opacity: 0;
   z-index: -10;
@@ -733,13 +716,98 @@ body {
 }
 
 /*For home page*/
+.logo {
+  width: 1.9rem;
+  height: 0.81rem;
+  margin: 0.4rem auto 0;
+}
+
 .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
   position: absolute;
   left: 0;
   top: 0;
   z-index: 2;
   width: 100%;
   height: 100%;
+}
+
+#pin-landing .top-bg {
+  width: 60vw;
+  height: 40vw;
+  position: absolute;
+  top: -25vw;
+  left: -20vw;
+  background: #fdbf2d;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+#pin-landing .bottom-bg {
+  width: 120vw;
+  height: 60vw;
+  position: absolute;
+  bottom: -60vw;
+  left: 0;
+  background: #fdbf2d;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+#pin-landing .slogan {
+  width: 4.46rem;
+  height: 1.87rem;
+  margin: 1rem auto;
+}
+#pin-landing .tag-list .item {
+  display: block;
+  width: 2.89rem;
+  height: 1.56rem;
+  margin-left: 55%;
+}
+#pin-landing .tag-list .item:nth-child(2n+1) {
+  margin-left: 50%;
+  transform: translateX(-100%);
+}
+#pin-landing .tag-list .item-think {
+  width: 3.02rem;
+  height: 1.7rem;
+}
+#pin-landing .tag-list .item-yes {
+  width: 2.42rem;
+  height: 1.44rem;
+  margin-top: -10%;
+}
+#pin-landing .tag-list .item-try {
+  width: 2.37rem;
+  height: 1.37rem;
+  margin-top: -5%;
+}
+#pin-landing .tag-list .item-love {
+  width: 2.89rem;
+  height: 1.56rem;
+}
+#pin-landing .tag-list .item-hope {
+  width: 1.97rem;
+  height: 1.3rem;
+  margin-top: -10%;
 }
 
 /*--------End home page--------*/

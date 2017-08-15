@@ -9,6 +9,7 @@
     <meta name="full-screen" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="stylesheet" type="text/css" href="../src/dist/css/style.css"/>
+    <script src="http://anketest.samesamechina.com/wechat/jssdk/config/js"></script>
     <script src="../src/dist/js/all_home.min.js"></script>
 </head>
 <body class="page-home">

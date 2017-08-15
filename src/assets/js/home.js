@@ -66,6 +66,7 @@
 
     controller.prototype.startUp = function(){
         var self = this;
+        Common.gotoPin(0);
         self.bindEvent();
     };
 
