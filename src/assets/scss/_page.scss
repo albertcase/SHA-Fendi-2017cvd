@@ -71,7 +71,7 @@
     }
   }
   .save-img{
-    display: none;
+    //display: none;
     @include fullabsolute(0,0,100%,100%,10);
     opacity: 0;
   }

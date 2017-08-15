@@ -817,7 +817,6 @@ body {
   height: 0.8rem;
 }
 #pin-result .save-img {
-  display: none;
   position: absolute;
   left: 0;
   top: 0;
