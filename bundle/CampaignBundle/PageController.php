@@ -3,15 +3,15 @@
 namespace CampaignBundle;
 
 use Core\Controller;
+use Lib\UserAPI;
 
 class PageController extends Controller
 {
 	public function indexAction() {
 		global $user;
-		var_dump($user);exit;
-		$RedisAPI = new \Lib\RedisAPI();
-		$config = $RedisAPI->jssdkConfig($this->request->getUrl(TRUE));
-		return $this->render('index', array('config' => $config));
+        $userAPI = new UserAPI();
+        $userInfo = $userAPI->findUserByOpenid($user->openid);
+		return $this->render('index', array('nickname' => $userInfo->nickname));
 	}
 
 	public function clearCookieAction() {

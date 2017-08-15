@@ -84,7 +84,7 @@
             </div>
             <div class="wish-words">
                 <span class="t1">Dear</span>
-                <span class="nickname">Evelyn</span>
+                <span class="nickname"><?php echo $nickname;?></span>
                 <div class="t2">
                     <img src="/src/dist/images/text_1.png" alt=""/>
                 </div>
