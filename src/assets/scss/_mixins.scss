@@ -75,3 +75,11 @@
   border-top: transparent $bt solid;
   border-bottom: transparent $bt solid;
 }
+
+@mixin fullabsolute($left,$top,$w,$h,$zindex){
+  position: absolute;
+  left: $left;
+  top: $top;
+  z-index: $zindex;
+  @include size($w,$h);
+}

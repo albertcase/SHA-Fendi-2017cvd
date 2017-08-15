@@ -467,3 +467,72 @@ p{
   transform: rotate(90deg); -webkit-transform: rotate(90deg); -webkit-animation: rotation infinite 1.5s ease-in-out; animation: rotation infinite 1.5s ease-in-out; -webkit-background-size: 67px; background-size: 67px }
 .mod-orient-layer__desc { margin-top: 20px; font-size: 15px; color: #fff }
 /*---------End landscape style---------*/
+
+//for pin
+/*Common setting for all page*/
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background: url("../images/bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+//for preload
+.preload{
+  @include fullabsolute(0,0,100%,100%,100);
+  background: url("../images/preload-bg.jpg") center center no-repeat;
+  background-size: cover;
+  .animate-flower{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    @include transition(opacity 4s linear);
+    background: url("../images/preload-flower.jpg")  center center no-repeat;
+    background-size: cover;
+    &.fadenow{
+      opacity: 1;
+    }
+  }
+  .loading-num{
+    position: absolute;
+    right: 2.8rem;
+    bottom: 10vh;
+    width: 1.2rem;
+    height: 0.6rem;
+    @include transform(rotate(90deg));
+    .num{
+      width: .6rem;
+      height: .6rem;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+}
+
+.logo{
+  @include size(2.18rem,0.73rem);
+}
+
+.pin{
+  opacity: 0;
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @include size(100%,100%);
+  padding-top: 1.3rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  @include transition(opacity 1s);
+  //display: none;
+  &.current{
+    display: block;
+    opacity: 1;
+    z-index: 1;
+  }
+}
