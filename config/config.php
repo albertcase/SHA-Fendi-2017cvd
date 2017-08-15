@@ -11,7 +11,7 @@ define("ENV", 'dev');
 define("USER_STORAGE", 'COOKIE');
 
 //
-define("WECHAT_CAMPAIGN", false);
+define("WECHAT_CAMPAIGN", true);
 
 //Wechat Vendor
 define("WECHAT_VENDOR", 'default'); // default | coach
@@ -51,7 +51,7 @@ define("OAUTH_ACCESS", '{
 	"xxxx": "samesamechina.com" 
 }');
 define("JSSDK_ACCESS", '{
-	"xxxx": "samesamechina.com",
+	"fendi": "samesamechina.com",
 	"dev": "127.0.0.1"
 }');
 

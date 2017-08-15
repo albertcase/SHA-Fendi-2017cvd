@@ -5,6 +5,7 @@ namespace Lib;
 use Core\Response;
 use Core\Request;
 use Core\Router;
+use Lib\Helper;
 
 class UserAPI extends Base {
 
