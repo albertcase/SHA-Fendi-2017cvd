@@ -811,3 +811,51 @@ body {
 }
 
 /*--------End home page--------*/
+/*For result page*/
+#pin-result .bg .item {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+#pin-result .save-img {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+#pin-result .wish-words {
+  font-size: 0.36rem;
+  color: #245967;
+  font-weight: bold;
+  width: 80vw;
+  margin: 0 auto;
+}
+#pin-result .wish-words .t2 {
+  width: 4.68rem;
+  margin: 0 auto;
+}
+#pin-result .tag-show {
+  width: 2.5rem;
+  height: 2.95rem;
+  margin: 0.37rem auto;
+}
+#pin-result .scan-qrcode-text {
+  width: 4.83rem;
+  height: 1.39rem;
+  margin: 0.37rem auto;
+}
+#pin-result .qrcode {
+  width: 7.5rem;
+  height: 3.76rem;
+  margin: 0.37rem auto;
+}
+#pin-result .tips {
+  width: 3.23rem;
+  height: 0.24rem;
+  margin: 0 auto;
+}
+
+/*--------End result page--------*/

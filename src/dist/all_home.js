@@ -772,7 +772,7 @@ Api = {
 
     controller.prototype.startUp = function(){
         var self = this;
-        Common.gotoPin(0);
+        Common.gotoPin(1);
         self.bindEvent();
     };
 
@@ -785,7 +785,7 @@ Api = {
     $(document).ready(function(){
 //    show form
         var newFollow = new controller();
-        newFollow.init();
+        newFollow.startUp();
 
     });
 

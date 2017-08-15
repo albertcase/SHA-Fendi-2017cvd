@@ -62,3 +62,45 @@
   }
 }
 /*--------End home page--------*/
+
+/*For result page*/
+#pin-result{
+  .bg{
+      .item{
+      @include size(0.8rem,0.8rem);
+    }
+  }
+  .save-img{
+    display: none;
+    @include fullabsolute(0,0,100%,100%,10);
+    opacity: 0;
+  }
+  .wish-words{
+    font-size: 0.36rem;
+    color: #245967;
+    font-weight: bold;
+    width: 80vw;
+    margin: 0 auto;
+    .t2{
+      width: 4.68rem;
+      margin: 0 auto;
+    }
+  }
+  .tag-show{
+    @include size(2.5rem,2.95rem);
+    margin: 0.37rem auto;
+  }
+  .scan-qrcode-text{
+    @include size(4.83rem,1.39rem);
+    margin: 0.37rem auto;
+  }
+  .qrcode{
+    @include size(7.5rem,3.76rem);
+    margin: 0.37rem auto;
+  }
+  .tips{
+    @include size(3.23rem,0.24rem);
+    margin: 0 auto;
+  }
+}
+/*--------End result page--------*/
